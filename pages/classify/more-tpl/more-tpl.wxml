@@ -1,0 +1,10 @@
+<!--pages/classify/more-tpl/more-tpl.wxml-->
+<import src='../classify-tpl/classify-tpl.wxml' />
+<view>
+      <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+        <view catchtap='onTapDetail' data-post-id="{{item.postId}}" class='content_ship'>
+          <template is="test" data="{{...item}}" />
+        </view>
+      </block>
+      
+  </view>

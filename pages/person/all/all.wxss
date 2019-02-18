@@ -1,0 +1,24 @@
+/* pages/person/all/all.wxss */
+.top{
+  width:100%; 
+  position:fixed; 
+  top:0; 
+}
+.swiper-tab{
+  display: flex;
+  flex-direction: row;
+  height: 100rpx;
+  border-bottom: 1px solid #ccc;
+
+}
+.swiper-tab-item{
+  width: 25%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 32rpx;
+}
+.active{
+    color:red;
+    width: 25%;
+    border-bottom: 4rpx solid red;
+}

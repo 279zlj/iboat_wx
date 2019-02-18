@@ -1,0 +1,7 @@
+.search_content{
+  display: flex;
+  flex-direction: row;
+}
+.content,.money{
+  margin-left: 30rpx;
+}

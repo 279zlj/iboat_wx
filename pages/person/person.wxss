@@ -1,0 +1,120 @@
+/* pages/person/person.wxss */
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top:50rpx; 
+  height: 400rpx;
+  background: white;
+}
+.userinfo button{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+}
+.userinfo-avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  margin-top: 100rpx;
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+}
+.img{
+  height: 70rpx;
+  width: 80rpx;
+  margin: 40rpx 0 25rpx 90rpx;
+}
+
+.userinfo-nickname {
+  color: black;
+  margin:40rpx 0 0 10rpx;
+  font-size: 42;
+  font-weight: 700; 
+}
+
+.coloum{
+  display: flex;
+  flex-direction: column;
+}
+.right{
+  float: right;margin-left: 330rpx;
+  font-size: 32rpx;
+  margin-top: 10rpx;
+}
+.left{
+  margin-left: 30rpx;
+}
+.bor{
+  padding-bottom: 25rpx;
+  border-bottom : 1px solid #ccc;
+  padding-top:25rpx; 
+}
+.coloum text{
+  text-align: center;
+  margin-left: 70rpx;
+  font-size: 32rpx;
+}
+.con{
+  margin-top:30rpx; 
+  background: white;
+  padding-bottom:50rpx; 
+}
+.category-item {
+  width: 100%;
+  margin: 20rpx 0;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  background-color: #fff;
+}
+.bg{
+  background: white;
+}
+.detail-item{
+    display: flex;
+    margin-left: 30rpx;
+    border-bottom: 1px solid RGBA(217, 217, 217, .4);
+    height:85rpx;
+    align-items: center;
+}
+.detail-item:last-child{
+    border-bottom:none;
+}
+.detail-item text{
+   
+    font-size:30rpx;
+    flex:1;
+    margin-left: 30rpx;
+}
+.detail-item .detail-item-btn{
+    width: 50rpx;
+    color: #d9d9d9;
+    height: 40rpx;
+    margin-right: 20rpx;
+    text-align: center;
+}
+.detail-item .detail-item-btn::after{
+    display: inline-block;
+    content:'';
+    width: 16rpx;
+    height: 16rpx;
+    color: #d9d9d9;
+    margin-top: 8rpx;
+    border:3rpx #d9d9d9 solid;
+    border-top-color:transparent;
+    border-left-color:transparent;
+    transform: rotate(-45deg);
+}
+
+page{
+  background: #F6F2EE;
+}
+.foot{
+  text-align: center;
+  font-size: 32rpx;
+  margin: 100rpx 0 50rpx 0;
+  color: lightgray;
+}

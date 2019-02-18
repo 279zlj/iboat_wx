@@ -1,0 +1,70 @@
+<!--pages/classify/classify.wxml-->
+<import src='classify-tpl/classify-tpl.wxml' />
+<import src='search-tpl/search-tpl.wxml' />
+<view class='top'>
+  <view class='search'>
+    <input class='inp' placeholder="输入船只全称" confirm-type='search' bindfocus='onBindFocus' value='{{inputValue}}' bindconfirm='onBindConfirm'/>
+    <image wx:if="{{searchShow}}" src='/images/wx_app_xx.png' class='search_img' catchtap='onCanceImgTap'></image>
+  </view>
+</view>
+<view wx:if="{{containerShow}}">
+<view class='bg'>
+<view class='row'>
+<block wx:for="{{classify}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+  <template is="classify" data='{{...item}}' />
+</block>
+  
+</view> 
+
+<view class='row'>
+  <block wx:for="{{classify_two}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+    <template is="classify" data='{{...item}}' />
+  </block>
+</view>
+</view>
+
+<view class='list'>
+ <view class='hot'>
+    <image src='/images/hot.png' class='hot-img'></image><text>热搜船只</text>
+ </view>
+ 
+<view class='big'>
+  <view class='content_ship'>
+      <block>
+        <view catchtap='onTapDetail' data-post-id="{{postList[0].postId}}">
+          <template is="classifyTpl" data="{{postList}}" />
+        </view>
+      </block>
+  </view>
+  <view class='content_ship'>
+      <block>
+        <view catchtap='onTapDetail' data-post-id="{{postList[1].postId}}">
+          <template is="classifyTpl1" data="{{postList}}" />
+        </view>
+      </block>
+  </view>
+</view>
+<view class='big'>
+  <view class='content_ship'>
+      <block>
+        <view catchtap='onTapDetail' data-post-id="{{postList[2].postId}}">
+          <template is="classifyTpl2" data="{{postList}}" />
+        </view>
+      </block>
+  </view>
+  <view class='content_ship'>
+      <block>
+        <view catchtap='onTapDetail' data-post-id="{{postList[3].postId}}">
+          <template is="classifyTpl3" data="{{postList}}" />
+        </view>
+      </block>
+  </view> 
+</view>
+  <view class='more' catchtap='tapmore'>
+    <text>查看更多 >>></text>
+  </view>
+</view>
+</view>
+<view wx:if="{{searchPanelShow}}" >
+  <template is="searchTpl" data="{{...postList[id-1]}}" />
+</view>

@@ -1,0 +1,9 @@
+/* pages/classify/more-tpl/more-tpl.wxss */
+@import '../classify-tpl/classify-tpl.wxss';
+.content_ship{
+  display: flex;
+  flex-direction:raw;
+  border: 1px solid #ccc;
+  margin-bottom:10rpx;
+  border-radius: 10rpx; 
+}

@@ -1,0 +1,19 @@
+<!--pages/person/address/address.wxml-->
+<view class='content' wx:for="{{addItems}}">
+  <view data-index="{{index}}">
+  <checkbox class='check'>
+    <view class='clounm'>
+      <view class='row'>
+        <text>{{item.name}}</text>
+        <text>{{item.tel}}</text>
+      </view>
+      <text>{{item.addre}}{{item.door}}</text>
+    </view>
+    
+  </checkbox>
+  <image src='/images/modify.png' class='c-img'></image>
+  </view>
+</view>
+<view class='footer' catchtap='topadd'>
+  <image src='/images/add.png' class='foot-img'></image><text class='foot-text'>新增个人地址</text>
+</view>

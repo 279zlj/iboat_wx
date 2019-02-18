@@ -1,0 +1,8 @@
+<template name="postTpl">
+      <view class='coloum'>
+        <image src='{{postimg}}' class='s-img'></image>
+        <text class='s-txt'>{{classify}}{{title}}</text>
+        <text class='s-small'>{{content}}</text>
+        <text class='money'>￥{{price}}</text>
+      </view> 
+</template>

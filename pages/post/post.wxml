@@ -1,0 +1,75 @@
+<!--pages/post/post.wxml-->
+<import src='post-item/post-item.wxml' />
+<view>
+  <swiper indicator-dots='true' autoplay='true' interval='3000'>
+    <swiper-item>
+      <image src='/images/swiper1.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper2.jpg'></image>
+    </swiper-item>
+    <swiper-item>
+      <image src='/images/swiper3.jpg'></image>
+    </swiper-item>
+  </swiper>
+  
+  <view class='bg'>
+  <view class='nav'>
+    <image src='/images/new.gif' class='new'></image>
+  </view>
+  <view class="scrool-left">
+    <scroll-view scroll-x="true" style="white-space: nowrap; display: block" class="showmian">
+    <view bindtap="chooseItem" class="w20 hovertxt">
+      <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+        <view catchtap='onTapDetail' data-post-id="{{item.postId}}">
+          <template is="postTpl" data="{{...item}}" />
+        </view>
+      </block>
+    </view> 
+    </scroll-view>
+    <view class='more'>
+      <text>左右滑动查看更多</text>
+    </view>
+   
+  </view>
+</view>
+
+
+<view class='bg_one'>
+  <view class='nav'>
+    <image src='/images/hot.gif' class='new'></image>
+  </view>
+  <view class="scrool-left">
+    <scroll-view scroll-x="true" style="white-space: nowrap; display: block" class="showmian">
+    <view bindtap="chooseItem" class="w20 hovertxt">
+      <block wx:for="{{postList}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+        <view catchtap='onTapDetail' data-post-id="{{item.postId}}">
+          <template is="postTpl" data="{{...item}}" />
+        </view>
+      </block>
+    </view> 
+    </scroll-view>
+    <view class='more'>
+      <text>左右滑动查看更多</text>
+    </view>
+  </view>
+</view>
+
+<view class='bg_one'>
+  <view class='nav'>
+    <image src='/images/idea.gif' class='new'></image>
+  </view>
+  <view class='coloum'>
+    <image src='/images/boat/exmaple_one.gif' class='idea-img'></image>
+    <text class='idea-title'>N-37 水陆两用</text>
+    <text class='idea-content'>这是一个关于水陆两用的无人设备，设法也来自变形金刚，从车变成机器人，我们将从无人船变成无人机。</text>
+  </view>
+</view>
+
+<view class='bg_one co'>
+  <text class='one'>一种更高效更快捷的水上无人设备解决方案</text>
+  <text class='center'>欢迎关注：同舟智能</text>
+  <image src='/images/wechat.jpg' class='wechat' ></image>
+</view>
+
+</view>

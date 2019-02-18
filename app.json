@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/post/post",
+    "pages/person/shop/shop",
+    
+    "pages/person/person",
+    "pages/buy/buy",
+    
+    
+    "pages/classify/more-tpl/more-tpl",
+    
+    "pages/person/all/all",
+    "pages/person/address/address",
+    "pages/person/address/add-form/add-form",
+    "pages/talk/talk",
+    
+    "pages/classify/classify",
+    "pages/person/keep/keep"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1F62CD",
+    "navigationBarTitleText": "同舟智能",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#333",
+    "selectedColor": "#005FC5",
+    "borderStyle": "black",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "selectedIconPath": "/images/ship.png",
+        "iconPath": "/images/ship.png",
+        "pagePath": "pages/post/post",
+        "text": "船舱"
+      },
+      {
+        "selectedIconPath": "/images/classify.png",
+        "iconPath": "/images/classify.png",
+        "pagePath": "pages/classify/classify",
+        "text": "分类"
+      },
+      {
+        "selectedIconPath": "/images/person.png",
+        "iconPath": "/images/person.png",
+        "pagePath": "pages/person/person",
+        "text": "船主"
+      }
+    ]
+  }
+}

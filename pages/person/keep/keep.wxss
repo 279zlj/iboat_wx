@@ -1,0 +1,25 @@
+/* pages/person/keep/keep.wxss */
+.keep_content{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10rpx;
+}
+.row{
+  height: 200rpx;
+}
+.tip{
+  font-size: 38rpx;
+  line-height: 200rpx;
+}
+.img{
+  width: 80rpx;
+  height: 70rpx;
+  margin-right: 20rpx;
+}
+.tips{
+  text-align: center;
+  width: 200rpx;
+  height: 100rpx;
+  color: #E8A400;
+}

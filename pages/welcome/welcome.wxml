@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='container'>
+  <image src='/images/iboat.png' class='avatar'></image>
+  <text class='motto'>广州同舟智能科技</text>
+  <text class='motto-small'>Guang Zhou Tong Zhou Zhi Neng Ke Ji</text>
+  <!-- <view class='ship-container'>
+    <text class='ship'>进入船舱</text>
+  </view> -->
+</view>

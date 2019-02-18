@@ -1,0 +1,46 @@
+<template name="classifyTpl">
+    <image src='{{postList[0].postimg}}' class='ship_img'></image>
+    <view class='ship_text'>
+      <text class='title'>{{postList[0].classify}}{{postList[0].title}}</text>
+      <text class='content'>{{postList[0].content}}</text>
+      <text class='money'>￥{{postList[0].price}}</text>
+    </view>
+</template>    
+<template name="classifyTpl1">
+    <image src='{{postList[1].postimg}}' class='ship_img'></image>
+    <view class='ship_text'>
+      <text class='title'>{{postList[1].classify}}{{postList[1].title}}</text>
+      <text class='content'>{{postList[1].content}}</text>
+      <text class='money'>￥{{postList[1].price}}</text>
+    </view>
+</template>    
+<template name="classifyTpl2">
+    <image src='{{postList[2].postimg}}' class='ship_img'></image>
+    <view class='ship_text'>
+      <text class='title'>{{postList[2].classify}}{{postList[2].title}}</text>
+      <text class='content'>{{postList[2].content}}</text>
+      <text class='money'>￥{{postList[2].price}}</text>
+    </view>
+</template>    
+<template name="classifyTpl3">
+    <image src='{{postList[3].postimg}}' class='ship_img'></image>
+    <view class='ship_text'>
+      <text class='title'>{{postList[3].classify}}{{postList[3].title}}</text>
+      <text class='content'>{{postList[3].content}}</text>
+      <text class='money'>￥{{postList[3].price}}</text>
+    </view>
+</template>    
+<template name="classify">
+  <view class='classify_one' catchtap='tapclass' data-id="{{id}}">
+    <image src='{{img}}'></image>
+    <text>{{name}}</text>
+  </view>
+</template>
+<template name="test">
+    <image src='{{postimg}}' class='shipimg'></image>
+    <view class='shiptext'>
+      <text class='shiptitle'>{{classify}}{{title}}</text>
+      <text class='shipcontent'>{{content}}</text>
+      <text class='shipmoney'>￥{{price}}</text>
+    </view>
+</template>  

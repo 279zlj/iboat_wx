@@ -1,0 +1,45 @@
+<!--pages/person/person.wxml-->
+<view>
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">     获取头像</button>
+    <block wx:else>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+
+  <view class='con'>
+    <view class='row bor'>
+      <text class='left'>我的订单</text>
+      <text class='right' catchtap='tapall'>查看全部订单</text>
+    </view>  
+    <view class='row'>
+      <view class='coloum' catchtap='tappay'>
+        <image src='/images/person/pay.png' class='img'></image><text>待付款</text>
+      </view>
+      <view class='coloum' catchtap='tapwait'>
+        <image src='/images/person/wait.png' class='img'></image><text>待发货</text>
+      </view>
+      <view class='coloum' catchtap='tapcar'>
+        <image src='/images/person/car.png' class='img'></image><text>已发货</text>
+      </view>
+      <view class='coloum' catchtap='tapfinish'>
+        <image src='/images/person/finish.png' class='img'></image><text>已完成</text>
+      </view>
+    </view>
+  </view>
+<view class='bg'>
+  <view class='category-item'>
+  <block wx:for='{{api}}' wx:key="">
+    <view class='detail-item' catchtap='{{item.tap}}'>
+      <text>{{item.title}}</text>
+      <view class='detail-item-btn'></view>
+    </view>
+  </block>
+</view>
+</view>
+<view class='foot'>
+  <text>欢迎使用：同舟智能</text>
+</view>
+</view>
+

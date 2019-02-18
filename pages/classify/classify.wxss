@@ -1,0 +1,90 @@
+/* pages/classify/classify.wxss */
+@import 'classify-tpl/classify-tpl.wxss';
+@import 'search-tpl/search-tpl.wxss';
+.search{
+  border-radius: 10rpx;
+  border: 1px #ccc solid;
+  width: 90%;
+  margin: 0 auto;
+  height: 70rpx;
+  background-color: white;
+  line-height: 80rpx;
+}
+.search_img{
+  width: 35rpx;
+  height: 40rpx;
+  float: right;
+  opacity: .5;
+  margin-right: 5px;
+  margin-top:10rpx; 
+}
+.inp{
+  width: 90%;
+  float: left;
+  color: gray;
+  font-size: 38rpx;
+  line-height: 80rpx;
+}
+.top{
+  background-color: #1296db;
+  height: 100rpx;
+  padding-top:25rpx; 
+  
+}
+.bg{
+  background: white;
+  padding-bottom: 30rpx;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+
+
+.big{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5rpx;
+  margin-top: 40rpx;
+  
+}
+.content_ship{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20rpx;
+  width: 340rpx;
+  border: #ccc 2px solid;
+  border-radius: 10rpx;
+}
+
+
+
+.hot{
+  text-align: center;
+  margin-top: 42rpx;
+  font-weight: 700;
+}
+.hot-img{
+  height: 60rpx;
+  width: 50rpx;
+  margin-right: 10rpx;
+  margin-top: 45rpx;
+}
+page{
+  background: #F6F2EE;
+}
+.list{
+  background: white;
+  border-top-right-radius: 30rpx;
+  border-top-left-radius: 30rpx;
+}
+.more{
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  color: grey;
+}

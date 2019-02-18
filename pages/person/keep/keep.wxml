@@ -1,0 +1,5 @@
+<!--pages/person/keep/keep.wxml-->
+<view class='keep_content'>
+  <view class='row'><image src='/images/tip.png' class='img'></image><text class='tip'>客官还没有收藏哦！</text></view>
+  <view class='t' catchtap='tappost'><text class='tips'>先去逛逛!</text></view>
+</view>

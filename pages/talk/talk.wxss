@@ -1,0 +1,196 @@
+/* pages/talk/talk.wxss */
+.footer
+{ 
+width:100%; 
+color:gray; 
+position:fixed; 
+bottom:0; 
+display: flex;
+flex-direction: row;
+border-top:1px solid lightgray; 
+background: white;
+} 
+.kf{
+  display: flex;
+  flex-direction: column;
+  height: 100rpx;
+  width: 80rpx;
+  padding-top:30rpx; 
+  padding-left: 10rpx;
+}
+.kf text{
+  line-height: 40rpx;
+}
+.coloum{
+  display: flex;
+  flex-direction: column;
+}
+.coloum image{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx 20rpx 5rpx 30rpx;
+}
+.coloum text{
+  font-size: 26rpx;
+  text-align: center;
+}
+.one{
+  font-size: 32rpx;
+  text-align: center;
+  width: 100rpx;
+  margin:0rpx 10rpx 0rpx 10rpx;
+  line-height: 120rpx;
+  color: #1A1163
+}
+.two{
+  font-size: 32rpx;
+  width: 100%;
+  margin-left:20rpx;
+  padding-right: 10rpx;
+  line-height: 120rpx;
+  color: white;
+}
+.one-color{
+  background: #81BDF9;
+  width: 50%
+}
+.two-color{
+  background: #1A1163;
+  width: 50%
+}
+.show swiper{
+  width: 100%;
+  height: 650rpx;
+  background: white;
+}
+.show swiper image{
+  width: 100%;
+  height: 650rpx;
+}
+.shop_img{
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 20rpx;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid gainsboro;
+}
+.title{
+  line-height: 100rpx;
+  font-size: 42rpx;
+  font-weight: 700;
+}
+.money{
+  color: red;
+  font-size: 48rpx;
+  line-height: 100rpx;
+  margin-left: 20rpx;
+}
+.coloum_one{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid lightgrey;
+}
+.money_one{
+  width: 100%;
+  
+}
+page{
+  background: #F6F2EE;
+}
+.bg{
+  background: white;
+}
+.left,.right{
+  line-height: 80rpx;
+  color: gray;
+  font-size: 32rpx;
+  margin-left: 20rpx;
+}
+.right{
+  float: right;
+  margin-right: 20rpx;
+}
+.bg_one{
+  background: white;
+  margin-top: 25rpx;
+}
+.row-title{
+  line-height: 80rpx;
+  font-size: 34rpx;
+  margin-left: 20rpx;
+}
+.row_content{
+  line-height: 70rpx;
+  font-size: 29rpx;
+  color: gray;
+  margin-left: 20rpx;
+}
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    font-weight: bold;
+}
+.swiper-tab-item{
+    display: inline-block;
+    width:30%;
+    margin-left:12%; 
+    color:black;
+    text-align: center;
+    line-height: 80rpx;
+    font-size: 32rpx;
+}
+.active{
+    color:red;
+    width: 30%;
+    border-bottom: 4rpx solid red;
+}
+.number{
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  line-height: 65rpx;
+  margin: 50rpx 30rpx 20rpx 30rpx;
+  
+}
+.number_show{
+  height: 1200rpx;
+}
+.number_c{
+   line-height:50rpx;
+   font-size: 35rpx;
+}
+.number_title{
+  font-size: 38rpx;
+  font-weight: 700;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.foot{
+
+  font-size: 32rpx;
+  color: gainsboro;
+  line-height: 200rpx;
+  padding-top: 500rpx;
+  padding-bottom: 200rpx;
+  width: 100%;
+
+}
+.te{
+  text-align: center;
+}
+.specify{
+  display: flex;
+  flex-direction: column;
+}
+.small{
+  font-size: 26rpx;
+  line-height: 50rpx;
+  margin-left: 20rpx;
+}

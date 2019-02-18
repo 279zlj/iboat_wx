@@ -1,0 +1,40 @@
+<!--pages/person/address/add-form/add-form.wxml-->
+<import src='../tpl/tpl' />
+<form bindsubmit="formSubmit" >
+<view class='bg'>
+  <view class='user'>
+    <text>用户姓名：</text><input type='text' name="name" placeholder='请填写您的名字' bindtap='click_blank'></input>
+  </view>
+  <view class='user'>
+    <text>联系电话：</text><input type='text' name="tel" placeholder='请填写您的手机号' bindtap='click_blank'></input>
+  </view>
+
+  <view class='user'>
+      <picker name="addre" value="{{array[index]}}" range='{{array}}' bindchange='bindPickerChange'>
+      <view>
+        当前选择：<text class='detail-item'>{{array[index]}}</text>
+      </view>
+      </picker>
+    </view>
+  <view class='user'>
+    <text>详细地址：</text><input type='text' name="door" placeholder='街道门牌号' bindtap='click_blank'></input>
+  </view>
+  <view class='user'>
+    <text>邮政编码：</text><input type='number' name="code" placeholder='街道门牌号' bindtap='click_blank'></input>
+  </view>
+</view>
+  <view>
+     <button formType="submit" class='btn'>保存</button>
+  </view>
+
+</form>
+<!-- <view>
+  
+  <picker-view indicator-style="height: 100rpx" class='select' value="{{item.name}}" bindchange="bindChange" hidden='{{show}}' animation="{{animationData}}">
+    <picker-view-column>
+    <block wx:for="{{city}}" wx:for-item="item" wx:for-index="idx" wx:key="*this">
+      <template is="tpl" data="{{...item}}" />
+    </block>
+    </picker-view-column>
+  </picker-view>
+</view> -->

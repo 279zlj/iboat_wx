@@ -1,0 +1,12 @@
+<template name="searchTpl">
+  <view class='bg'  catchtap='onDetail'>
+    <view class='search_content'>
+      <image src='{{postimg}}' class='ship_img'></image>
+      <view class='ship_text'>
+        <text class='title'>{{classity}}{{title}}</text>
+        <text class='content'>{{content}}</text>
+        <text class='money'>￥{{price}}</text>
+      </view>
+    </view>
+  </view>
+</template>
